@@ -49,13 +49,16 @@
  */
 + (void)load
 {
-    // 'initWithNibName:bundle:' 메소드를 'initWithLegacyNibName:bundle:' 메소드라는 이름으로 생성해서 추가함.
-    // 추가기 때문에 'initWithNibName:bundle:' 메소드, 'initWithLegacyNibName:bundle:' 메소드 두 이름으로 동일한 기능.
-    class_addMethod([self class], @selector(initWithLegacyNibName:bundle:), [self instanceMethodForSelector:@selector(initWithNibName:bundle:)], "v@:@@");
-    
-    // 'initWith4InchNibName:bundle:' 메소드를 'initWithNibName:bundle:' 로 교체
-    Method new = class_getInstanceMethod(self, @selector(initWith4InchNibName:bundle:));
-    class_replaceMethod([self class], @selector(initWithNibName:bundle:), method_getImplementation(new), "v@:@@");
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 'initWithNibName:bundle:' 메소드를 'initWithLegacyNibName:bundle:' 메소드라는 이름으로 생성해서 추가함.
+        // 추가기 때문에 'initWithNibName:bundle:' 메소드, 'initWithLegacyNibName:bundle:' 메소드 두 이름으로 동일한 기능.
+        class_addMethod([self class], @selector(initWithLegacyNibName:bundle:), [self instanceMethodForSelector:@selector(initWithNibName:bundle:)], "v@:@@");
+        
+        // 'initWith4InchNibName:bundle:' 메소드를 'initWithNibName:bundle:' 로 교체
+        Method new = class_getInstanceMethod(self, @selector(initWith4InchNibName:bundle:));
+        class_replaceMethod([self class], @selector(initWithNibName:bundle:), method_getImplementation(new), "v@:@@");
+    });
 }
 
 #pragma clang diagnostic pop
