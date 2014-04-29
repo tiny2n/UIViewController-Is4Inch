@@ -4,11 +4,18 @@ UIViewController-Is4Inch
 UIViewController+Is4Inch using category swizzle selector
 
 
+
 ### Installation
 
 
+
 ### Usage
-Just Import file which UIViewController-Is4Inch.m
+Import file which UIViewController-Is4Inch.m
+
+create xib 3.5 inch, UIViewController.xib
+
+create xib 4 inch,   UIViewController_568.xib
+
 
 
 License
