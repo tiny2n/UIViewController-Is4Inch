@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5DFF52B-858E-44E8-A78C-B73F2BC2AE5A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UIViewController-Is4InchDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>84206583-61FB-4E84-B24C-759F6219CDA2</key>
+		<string>https://github.com/tiny2n/UIViewController-Is4Inch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UIViewController-Is4InchDemo/UIViewController-Is4InchDemo/UIViewController-Is4InchDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>84206583-61FB-4E84-B24C-759F6219CDA2</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tiny2n/UIViewController-Is4Inch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>84206583-61FB-4E84-B24C-759F6219CDA2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>84206583-61FB-4E84-B24C-759F6219CDA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIViewController-Is4Inch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
